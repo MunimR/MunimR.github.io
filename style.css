@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     width: 100%;
     height: 100vh;
 
-    font-family: 'Fira Sans';
+    font-family: 'Roboto';
 
     display: flex;
     flex-direction: column;
@@ -14,9 +18,11 @@ body {
 
     background-color: #fff;
     
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.55) ;
 
     display: flex;
+
+    z-index: 10;
 }
 
 #right-logo {
@@ -34,20 +40,24 @@ body {
     flex-direction: row-reverse;
     align-items: flex-end;
 
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #left-menu a {
-    margin: 0 0.25em .8em;
-    color: #fff;
+    margin: 0 0.25em .2em;
+    color: #000;
     text-decoration: none;
-    background-color: #13aa52;
     padding: 0.5em 1em;
+    
+    text-underline-offset: 0.25em;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms, transform 300ms;
+}
 
-    border-radius: 4px;
-    border: 1px solid #13aa52;
-
-    box-shadow: rgb(0, 0, 0, 0.1) 0 2px 4px 0;
+#left-menu a:hover {
+    text-decoration-color: rgba(0, 0, 0, 1);
+    transform: translateY(-x.1em);
 }
 
 #main {
@@ -63,10 +73,50 @@ body {
     height: 100%;
     width: 100vw;
     flex: 0 0 auto;
+    position: relative;
+}
+
+.cardimg {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    transition: filter 300ms;
+    
+
+    display: flex;
+}
+
+.cardimg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontent {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+
+
 }
 
 #foot {
     width: 100%;
+
+    color: rgba(255, 255, 255, 0.55);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 
     position: absolute;
     bottom: 0;
@@ -76,3 +126,5 @@ body {
 
     font-family: 'Calligraffitti';
 }
+
+
