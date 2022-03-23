@@ -111,7 +111,6 @@ body {
 }
 
 .cardcontent {
-    width: 40%;
     height: 100%;
 
     position: absolute;
@@ -142,3 +141,20 @@ body {
 }
 
 
+.ani {
+    transition: transform 450ms, opacity 100ms;
+    opacity: 0;
+}
+
+.l {
+    transform: translateX(-3em);
+}
+
+.r {
+    transform: translateX(3em);
+}
+
+.loaded {
+    transform: translate(0, 0);
+    opacity: 1;
+}
