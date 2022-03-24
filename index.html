@@ -14,37 +14,48 @@
         </div>
         <div id="left-menu">
             <a href="#more">More</a>
-            <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#home">Home</a>
         </div>
     </div>
     <div id="main">
-        <div id="home" class="card center">
+        <div id="home" class="card center " style=>
             <div class="cardimg" style="background-image: url(imgs/home.jpg); background-position-y: center;"></div>
-            <div class="cardcontent">
+            <div class="cardcontent" style="width: 50%">
                 <p class="ani l" style="flex-grow: 1"><strong style="font-size: 2.5em;">Munim Rahman's Portfolio</strong><br><span style="font-size: 2em;">Full Stack Developer</span><br><span style="font-size: 1.25em;">Welcome to my web portfolio, here you can find out more about my career history and development skills.</span></p>
                 <img class="ani r" src="imgs/avatar-1577909_960_720.png" style="height: 25%; border-radius: 50%;"/>
             </div>
         </div>
+
         <div id="experience" class="card center">
             <div class="cardimg" style="background-image: url(imgs/exp.jpg); background-position-y: center;"></div>
             
             <div class="cardcontent" style="width: 70%;">
                 <p class="ani l" style="width: 75%"><strong style="font-size: 2.5em;">My Experience</strong><br><span style="font-size: 2em;">Software Innovation Intern • Telos</span><br><span>2018 - 2022</span><br><br><span style="font-size: 1.25em;">1st Year - Blockchain Project<br>Created, tested, and maintained a blockchain instance using Hyperledger<br><br>2nd Year - Company Hub Rework<br>Developed a new website for the company intranet<br>Learned how to manage and develop on a GitHub repository<br>Learned how to interact with different RESTful APIs<br><br>3rd Year - Security Compliance & Product API Project<br>Learned about risk management framework and organization security controls<br>Began development on widgets for company software<br><br>4th Year - Knowledge Base Research & Solutions Architect<br>Researched knowledge base software<br>Practiced working as a solution architect by interpreting business requires for development team<br>Additionally worked on making small scripts for solutions</span></p>
-                <div class="ani r" style="height: 50%; width: 35%; overflow-y: auto;">
+                <div class="ani r" style="height: 50%; width: 35%;     display: flex;flex-direction: column;">
                     <p><strong style="font-size: 2.5em;">Key Skills</strong></p>
-                    <p><strong style="font-size: 2.5em;">Key Skills:</strong><br><span style="font-size: 2em;">Software Innovation Intern • Telos</span></p>
-                    <p><strong style="font-size: 2.5em;">Key Skills:</strong><br><span style="font-size: 2em;">Software Innovation Intern • Telos</span></p>
-                    <p><strong style="font-size: 2.5em;">Key Skills:</strong><br><span style="font-size: 2em;">Software Innovation Intern • Telos</span></p>
+                    <div style="overflow-y: auto; height: 100%">
+                        <p><span style="font-size: 2em;">Programming</span><br><span style="font-size: 1.25em;">Python<br>Java<br>C++<br>Lua</span></p>
+                        <p><span style="font-size: 2em;">Backend</span><br><span style="font-size: 1.25em;">PHP<br>NodeJS<br>Flask<br></p>
+                        <p><span style="font-size: 2em;">Frontend</span><br><span style="font-size: 1.25em;">HTML / CSS / JS<br>Bootsrap<br>React<br>jQuery<br>Angular<br></p>
+                        <p><span style="font-size: 2em;">Development</span><br><span style="font-size: 1.25em;">GitHub<br>Agile / SCRUM<br>JIRA<br></p>
+                        <p><span style="font-size: 2em;">Software</span><br><span style="font-size: 1.25em;">Microsoft Suite<br>Adobe Suite<br>PowerBI<br>Tableau<br>Apache Spark<br></p>
+                    </div>
+                    <button style="margin-top: 1em;" type="submit" onclick="window.open('resume.pdf')">Download Resume (PDF)</button>
                 </div>
             </div>
         </div>
-        <div id="projects" class="card">
-            
-        </div>
-        <div id="more" class="card">
-            
+        <div id="more" class="card center">
+            <div class="cardimg" style="background-image: url(imgs/more.jpg); background-position-y: center;"></div>
+
+            <div class="cardcontent" style="flex-direction: column; justify-content: center; align-items: flex-start; width: 50%">
+                <p class="ani l"><strong style="font-size: 2.5em;">More about me . . .</strong><br><span style="font-size: 2em;">Hobbies</span><br><br><span style="font-size: 1.25em;">Outside of work I love to… work on cars, play video games, play golf, workout, play chess, work on open-source projects, go biking, playing basketball, and many other activities.</span><br><br><span style="font-size: 2em;">Links</span></p>
+                <div class="ani d">
+                    <a href="https://www.linkedin.com/in/munimr/" target="_blank"><img src="imgs/linkedin.png" class="icon"></a>
+                    <a href="https://github.com/MunimR" target="_blank"><img src="imgs/github.png" class="icon"></a>
+                    <img style="cursor: pointer" src="imgs/email.png" class="icon" onclick="email()">
+                </div>
+            </div>
         </div>
     </div>
     <div id="foot">
